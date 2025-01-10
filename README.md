@@ -14,6 +14,9 @@ ArticleHub is a modern React-based platform for reading and managing articles. I
 ---
 
 ## Project Overview
+
+Note: Intially there would be no article you have to write an article by clicking on "write" button
+
 ArticleHub is designed to:
 - Provide a distraction-free reading environment.
 - Showcase proper React patterns, state management, and component architecture.
