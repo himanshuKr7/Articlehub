@@ -35,7 +35,6 @@ const CreateArticle = () => {
         setIsSaving(true);
 
         try {
-            // Create FormData for file upload
             const submitData = new FormData();
             Object.keys(formData).forEach(key => {
                 if (key === 'tags') {
@@ -44,14 +43,11 @@ const CreateArticle = () => {
                     submitData.append(key, formData[key]);
                 }
             });
-
-            // Save to localStorage
             const storedArticles = JSON.parse(localStorage.getItem("articles")) || [];
-            const newArticle = { id: Date.now(), ...formData }; // Assign a unique ID
+            const newArticle = { id: Date.now(), ...formData }; 
             storedArticles.push(newArticle);
             console.log("New article:", newArticle);
             localStorage.setItem("articles", JSON.stringify(storedArticles));
-            // Handle success
             alert("Article saved successfully!");
         } catch (error) {
             console.error("Error saving article:", error);

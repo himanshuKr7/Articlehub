@@ -6,10 +6,9 @@ import ReadingProgress from "../components/ReadingProgress";
 const ArticleView = () => {
     const [fontSize, setFontSize] = useState(16);
     const [article, setArticle] = useState(null);
-    const { id } = useParams(); // Assuming the article ID is passed in the URL
+    const { id } = useParams(); 
 
     useEffect(() => {
-        // Fetch article from localStorage based on the ID
         const storedArticles = JSON.parse(localStorage.getItem("articles")) || [];
         const currentArticle = storedArticles.find((article) => article.id === parseInt(id));
         if (currentArticle) {

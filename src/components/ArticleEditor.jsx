@@ -35,7 +35,6 @@ const MenuBar = ({ editor }) => {
     return (
         <div className={`border-b ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} pb-3 mb-4`}>
             <div className="flex flex-wrap gap-1 mb-2">
-                {/* Text Style Controls */}
                 <div className="flex space-x-1 border-r pr-2 mr-2">
                     <button
                         type="button"
@@ -62,8 +61,6 @@ const MenuBar = ({ editor }) => {
                         <UnderlineIcon size={16} />
                     </button>
                 </div>
-
-                {/* Alignment Controls */}
                 <div className="flex space-x-1 border-r pr-2 mr-2">
                     <button
                         type="button"
@@ -90,8 +87,6 @@ const MenuBar = ({ editor }) => {
                         <AlignRight size={16} />
                     </button>
                 </div>
-
-                {/* Heading Controls */}
                 <div className="flex space-x-1 border-r pr-2 mr-2">
                     <button
                         type="button"
@@ -110,8 +105,6 @@ const MenuBar = ({ editor }) => {
                         <Heading2 size={16} />
                     </button>
                 </div>
-
-                {/* List Controls */}
                 <div className="flex space-x-1 border-r pr-2 mr-2">
                     <button
                         type="button"
@@ -150,8 +143,6 @@ const MenuBar = ({ editor }) => {
                         <Link2 size={16} />
                     </button>
                 </div>
-
-                {/* Undo/Redo Controls */}
                 <div className="flex space-x-1 ml-auto">
                     <button
                         type="button"
@@ -173,8 +164,6 @@ const MenuBar = ({ editor }) => {
                     </button>
                 </div>
             </div>
-
-            {/* Link Input */}
             {showLinkInput && (
                 <div className="flex items-center gap-2 mt-2">
                     <input

@@ -12,7 +12,6 @@ const Homepage = () => {
 	const [articles, setArticles] = useState([]);
 
 	useEffect(() => {
-		// Load articles from localStorage
 		const storedArticles = JSON.parse(localStorage.getItem("articles")) || [];
 		setArticles(storedArticles);
 	}, []);
