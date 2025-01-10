@@ -94,7 +94,7 @@ const Homepage = () => {
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{sortedArticles.length === 0 ? (
-						<p>No articles found.</p>
+						<p>No articles , Please Write an Article by clikcing on Write button</p>
 					) : (
 						sortedArticles.map((article) => (
 							<Link key={article.id} to={`/article/${article.id}`}>
