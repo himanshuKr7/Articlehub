@@ -38,7 +38,7 @@ ArticleHub is designed to:
 ## Setup Instructions
 1. Clone the repository:
     ```bash
-    git clone https://github.com/himanshukumar7/articlehub.git
+    https://github.com/himanshuKr7/Articlehub.git
     cd articlehub
     ```
 
